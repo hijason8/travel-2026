@@ -3,76 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Snoopy's 7-Day Adventure 2025</title>
+    <title>Family Trip</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&family=Varela+Round&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Kosugi+Maru', 'Varela+Round', sans-serif; }
-        .snoopy-float { animation: floating 3s ease-in-out infinite; }
-        @keyframes floating { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-10px); } }
-        
-        .tooltip-box { 
-            display: none; 
-            position: absolute; 
-            bottom: 135%; 
-            left: 50%; 
-            transform: translateX(-50%); 
-            background: #FFD166; 
-            color: #2B2D42; 
-            padding: 8px 14px; 
-            border: 3px solid black; 
-            border-radius: 12px; 
-            white-space: nowrap; 
-            z-index: 50; 
-            box-shadow: 6px 6px 0px black;
-            font-weight: bold;
-            font-size: 13px;
-        }
-        .tooltip-box::after {
-            content: "";
-            position: absolute;
-            top: 100%;
-            left: 50%;
-            margin-left: -8px;
-            border-width: 8px;
-            border-style: solid;
-            border-color: black transparent transparent transparent;
-        }
-        .has-tooltip:hover .tooltip-box { display: block; }
+        body { font-family: 'Kosugi Maru', sans-serif; background-color: #FFF9EC; }
+        .day-header { border-left: 8px solid #2B2D42; padding-left: 15px; margin-bottom: 20px; }
+        .time-node { position: relative; padding-left: 30px; border-left: 2px solid #E2E8F0; padding-bottom: 20px; }
+        .time-node::before { content: ''; position: absolute; left: -7px; top: 5px; width: 12px; height: 12px; background: #2B2D42; border-radius: 50%; }
+        .warning-box { border: 2px solid #EF476F; background: #FFF1F2; padding: 10px; border-radius: 10px; font-size: 0.85rem; color: #9F1239; }
+        .info-tag { display: inline-block; background: #E0E7FF; color: #3730A3; padding: 2px 8px; border-radius: 5px; font-size: 0.75rem; font-weight: bold; }
     </style>
+
+
+
 </head>
-<body class="bg-[#FFF9EC] text-gray-700">
+<body class="p-4 md:p-8">
 
-    <header class="bg-[#FFD166] pt-12 pb-8 px-6 relative overflow-hidden border-b-4 border-black shadow-lg text-center">
-        <div class="max-w-3xl mx-auto relative z-10">
-            <div class="flex justify-center items-center space-x-4 mb-4">
-                <span class="text-3xl snoopy-float">❤️</span>
-                <div class="bg-white p-3 rounded-2xl border-4 border-black relative font-bold text-lg">
-                    1/22 Thursday!
-                    <div class="absolute -left-2 top-4 w-4 h-4 bg-white border-l-4 border-b-4 border-black transform rotate-45"></div>
-                </div>
-            </div>
-            <h1 class="text-4xl font-black text-[#2B2D42] mb-2 uppercase tracking-tight">2025 關西冬日冒險</h1>
-            <p class="text-[#EF476F] font-black text-xl mb-6">❄️ 1月氣溫：2°C ~ 9°C | 滑雪場：-2°C</p>
-
-            <div class="bg-white border-4 border-black rounded-3xl p-6 shadow-[10px_10px_0px_0px_rgba(0,0,0,1)] text-left max-w-2xl mx-auto">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4 font-bold">
-                    <div class="bg-indigo-50 p-3 rounded-xl border-2 border-indigo-200">
-                        <p class="text-[10px] font-black text-indigo-500 uppercase">去程 CI 156 (1/22 四)</p>
-                        <p>08:05 TPE ➔ 11:35 KIX</p>
-                    </div>
-                    <div class="bg-rose-50 p-3 rounded-xl border-2 border-rose-200">
-                        <p class="text-[10px] font-black text-rose-500 uppercase">回程 CI 173 (1/28 三)</p>
-                        <p>19:00 KIX ➔ 21:15 TPE</p>
-                    </div>
-                </div>
-                <div class="pt-3 border-t-2 border-dashed border-gray-300">
-                    <i class="fa-solid fa-hotel text-yellow-500 mr-2"></i>
-                    <span class="font-bold">住宿：</span>
-                    <a href="https://maps.app.goo.gl/uX3L5p2h27R6E5F86" target="_blank" class="text-blue-600 underline font-black">Hotel Monterey Le Frere Osaka</a>
-                </div>
-            </div>
+    <header class="max-w-4xl mx-auto text-center mb-10 bg-[#FFD166] p-8 rounded-3xl border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]">
+        <h1 class="text-3xl font-black mb-2">2026 關西旅遊 1/22 - 1/28 </h1>
+        <p class="font-bold text-gray-700">CI0156 TPE(2)航>KIX(1)航 </p>
+        <p class="font-bold text-gray-700">CI0173 KIX(1)航>TPE(2)航</p>
+        <div class="mt-4 flex justify-center gap-4 text-sm font-bold">
+            <span class="bg-white px-3 py-1 rounded-full border-2 border-black"> 酒店：The OSAKA STATION HOTEL</span>
+            <span class="bg-white px-3 py-1 rounded-full border-2 border-black">3-2-2 Umeda, Kita Ward, Osaka</span>
         </div>
     </header>
 
@@ -87,99 +42,183 @@
             </div>
         </div>
     </section>
+    <br/>
+    <main class="max-w-4xl mx-auto space-y-12">
 
-<main class="max-w-2xl mx-auto p-6 mt-8">
-        <div class="space-y-12">
-
-            <div class="group relative pl-10 border-l-4 border-black">
-                <div class="absolute -left-[20px] top-0 w-9 h-9 bg-white border-4 border-black rounded-full flex items-center justify-center font-black text-sm z-10 group-hover:bg-[#FFD166] transition-colors">1</div>
-                <h2 class="text-2xl font-black text-gray-800 mb-2">1/22 (四) 抵達梅田</h2>
-                <div class="bg-white border-4 border-black p-5 rounded-2xl shadow-[6px_6px_0px_0px_rgba(0,0,0,0.1)] space-y-6">
-                    <div><h3 class="text-xl font-black text-blue-600 underline">📍 關西機場 / 梅田區</h3><p>📝 內容: 搭乘利木津巴士前往 Herbis Osaka (梅田)</p><p>⏰ 時間: 11:35 抵達關西機場，預計 15:00 抵達飯店</p><p class="text-red-500">⚠️ 注意: 利木津巴士車資約 1800</p></div>
-                    <div><h3 class="text-xl font-black text-blue-600 underline">📍 梅田商圈探索</h3><p>📝 內容: 逛 Herbis Plaza、Grand Front Osaka 百貨</p><p>⏰ 時間: 下午時段</p><p class="text-red-500">⚠️ 注意: 梅田地下街巨大易迷路，建議使用導航</p></div>
-                    <div><h3 class="text-xl font-black text-blue-600 underline">📍 梅田藍天大廈</h3><p>📝 內容: 空中庭園展望台看夜景</p><p>⏰ 時間: 17:15 日落前後最佳</p><p class="text-red-500">⚠️ 注意: 冬季頂樓風大，務必穿著保暖外套</p></div>
+        <section>
+            <div class="day-header">
+                <h2 class="text-2xl font-black text-[#2B2D42]">Day 1: 1/22 (四) 抵達與裝備採買</h2>
+                <p class="text-sm font-bold text-gray-500">重點：入手滑雪裝備與機能外套</p>
+            </div>
+            <div class="bg-white border-4 border-black p-6 rounded-2xl shadow-xl space-y-4">
+                <div class="time-node">
+                    <span class="info-tag">11:35</span> <span class="font-black">抵達關西機場 (KIX) T1</span>
+                    <p class="text-sm text-gray-600 mt-1">領行李、過海關。至 JR 綠色窗口或機器領取 <b>HARUKA</b> 票券。</p>
+                </div>
+                <div class="time-node">
+                    <span class="info-tag">13:14 - 14:30</span> <span class="font-black">搭乘 HARUKA 號直達大阪站</span>
+                    <p class="text-sm text-gray-600">搭乘前往「新大阪/京都」方向。HARUKA 現在直達「大阪站」地下月台，步行至飯店約 10-15 分鐘。</p>
+                </div>
+                <div class="time-node">
+                    <span class="info-tag">16:00 - 19:00</span> <span class="font-black">梅田區機能衣大採購</span>
+                    <ul class="text-sm text-gray-700 mt-2 space-y-2">
+                        <li>🛒 <b>ALBi 戶外街：</b> 專攻 <b>Montbell</b> (買外套、防水手套、毛帽、頸套)。</li>
+                        <li>🛒 <b>Links Umeda：</b> 2F ABC-MART 買鞋，6F 買滑雪長襪，B1 藥妝店買暖暖包。</li>
+                        <li>🛒 <b>大丸梅田：</b> 13F 帶女兒看任天堂與寶可夢中心。</li>
+                    </ul>
+                </div>
+                <div class="warning-box font-bold">
+                    ⚠️ 可以領外國人折價卷，另外買完後直接在店內退稅(帶護照)。滑雪用的防水手套與長襪必買，雪場租不到！
                 </div>
             </div>
+        </section>
 
-            <div class="group relative pl-10 border-l-4 border-[#EF476F]">
-                <div class="absolute -left-[20px] top-0 w-9 h-9 bg-white border-4 border-[#EF476F] rounded-full flex items-center justify-center font-black text-sm z-10 group-hover:bg-[#FFD166] transition-colors">2</div>
-                <h2 class="text-2xl font-black text-[#EF476F] mb-2">1/23 (五) 日本環球影城 USJ</h2>
-                <div class="bg-white border-4 border-black p-5 rounded-2xl shadow-[6px_6px_0px_0px_rgba(239,71,111,0.2)] space-y-6">
-                    <div><h3 class="text-xl font-black text-blue-600 underline">📍 JR 環球城站</h3><p>📝 內容: 入園並使用 App 領取任天堂整理券</p><p>⏰ 時間: 07:15 出門，08:00 前抵達門口</p><p class="text-red-500">⚠️ 注意: 冬季海邊低溫，準備暖暖包</p></div>
-                    <div><h3 class="text-xl font-black text-blue-600 underline">📍 園區必看表演</h3><p>📝 內容: NO LIMIT! 遊行、水世界特技秀</p><p>⏰ 時間: 遊行約 13:00 (視當日公告)</p><p class="text-red-500">⚠️ 注意: 遊行需提早 30 分鐘佔位</p></div>
-                    <div><h3 class="text-xl font-black text-blue-600 underline">📍 沉浸式設施</h3><p>📝 內容: 瑪利歐賽車、哈利波特城堡漫步 (不刺激)</p><p>⏰ 時間: 閉園前天黑後去拍夜景最美</p><p class="text-red-500">⚠️ 注意: 閉園時間約 19:00-20:00，無煙火</p></div>
+        <section>
+            <div class="day-header">
+                <h2 class="text-2xl font-black text-[#EF476F]">Day 2: 1/23 (五) 環球影城 (USJ)</h2>
+                <p class="text-sm font-bold text-gray-500">重點：衝瑪利歐世界、海邊防風保暖</p>
+            </div>
+            <div class="bg-white border-4 border-black p-6 rounded-2xl shadow-xl space-y-4">
+                <div class="time-node">
+                    <span class="info-tag">06:20</span> <span class="font-black">出發前往 JR 大阪站</span>
+                    <p class="text-sm text-gray-600">搭乘「JR 櫻島線」直達「Universal City」站。</p>
+                </div>
+                <div class="time-node">
+                    <span class="info-tag">07:00</span> <span class="font-black">抵達園區門口安檢</span>
+                    <p class="text-sm text-gray-600 font-bold">週五通常會提早至 07:30-08:00 放人，一定要排在第一波。</p>
+                </div>
+                <div class="time-node">
+                    <span class="info-tag">08:00 - 18:00</span> <span class="font-black">園區奮戰</span>
+                    <p class="text-sm text-gray-700">入園即抽「瑪利歐整理券」。建議下午去哈利波特區(免抽)。</p>
+                </div>
+                <div class="warning-box font-bold">
+                    ⚠️ 海邊體感溫度極低，暖暖包。
                 </div>
             </div>
+        </section>
 
-            <div class="group relative pl-10 border-l-4 border-[#06D6A0]">
-                <div class="absolute -left-[20px] top-0 w-9 h-9 bg-white border-4 border-[#06D6A0] rounded-full flex items-center justify-center font-black text-sm z-10 group-hover:bg-[#FFD166] transition-colors">3</div>
-                <h2 class="text-2xl font-black text-[#06D6A0] mb-2">1/24 (六) 京都歷史巡禮</h2>
-                <div class="bg-white border-4 border-black p-5 rounded-2xl shadow-[6px_6px_0px_0px_rgba(6,214,160,0.2)] space-y-6">
-                    <div><h3 class="text-xl font-black text-blue-600 underline">📍 伏見稻荷大社</h3><p>📝 內容: 千本鳥居與狐狸使者</p><p>⏰ 時間: 08:30 前抵達最佳</p><p class="text-red-500">⚠️ 注意: 週六人潮極多，建議提早出發</p></div>
-                    <div><h3 class="text-xl font-black text-blue-600 underline">📍 清水寺 / 二三年坂</h3><p>📝 內容: 清水舞台、逛古街喝星巴克榻榻米門市</p><p>⏰ 時間: 中午時段</p><p class="text-red-500">⚠️ 注意: 全程上坡步行多，需舒適鞋履</p></div>
-                    <div><h3 class="text-xl font-black text-blue-600 underline">📍 祇園 / 花見小路</h3><p>📝 內容: 八坂神社與藝妓街散步</p><p>⏰ 時間: 傍晚時段</p><p class="text-red-500">⚠️ 注意: 嚴禁對藝妓近距離強行拍照</p></div>
+        <section>
+            <div class="day-header">
+                <h2 class="text-2xl font-black text-[#06D6A0]">Day 3: 1/24 (六) 大阪周遊卡一日遊</h2>
+                <p class="text-sm font-bold text-gray-500">重點：美食採買、溜滑梯、晚船夜景</p>
+            </div>
+            <div class="bg-white border-4 border-black p-6 rounded-2xl shadow-xl space-y-4">
+                <div class="time-node">
+                    <span class="info-tag">10:00</span> <span class="font-black">黑門市場早午餐</span>
+                    <p class="text-sm text-gray-600">地鐵「日本橋」站。必吃：燒烤海鮮、草莓大福。</p>
+                </div>
+                <div class="time-node">
+                    <span class="info-tag">13:00</span> <span class="font-black">天王寺公園站：購物</span>
+                    <p class="text-sm text-gray-600"><b>阿倍野 Q's Mall</b> 。<b>阿倍野 HARUKAS 300 展望台：</b> 持周遊卡免費進場。</p>
+                </div>
+                <div class="time-node">
+                    <span class="info-tag">15:30</span> <span class="font-black">通天閣 Slider 溜滑梯</span>
+                    <p class="text-sm text-gray-600 font-bold text-red-600">週末必排！持卡免費，建議一抵達新世界就先來排隊。</p>
+                </div>
+                <div class="time-node">
+                    <span class="info-tag">18:30</span> <span class="font-black">道頓堀觀光船</span>
+                    <p class="text-sm text-gray-600">夜景最美，船票需下午先去售票處持卡兌換指定班次。</p>
+                </div>
+                <div class="warning-box font-bold">
+                    ⚠️ 通天閣一般展望台 (¥900)/溜滑梯/道頓掘觀光船下午 3-4 點經過難波時，請先去售票處換好晚上（如 19:00）的船票
                 </div>
             </div>
+            </div>
+        </section>
 
-            <div class="group relative pl-10 border-l-4 border-[#118AB2]">
-                <div class="absolute -left-[20px] top-0 w-9 h-9 bg-white border-4 border-[#118AB2] rounded-full flex items-center justify-center font-black text-sm z-10 group-hover:bg-[#FFD166] transition-colors">4</div>
-                <h2 class="text-2xl font-black text-[#118AB2] mb-2">1/25 (日) 神戶港風情</h2>
-                <div class="bg-white border-4 border-black p-5 rounded-2xl shadow-[6px_6px_0px_0px_rgba(17,138,178,0.2)] space-y-6">
-                    <div><h3 class="text-xl font-black text-blue-600 underline">📍 北野異人館街</h3><p>📝 內容: 西洋建築群、風見雞之館</p><p>⏰ 時間: 上午 10:00</p><p class="text-red-500">⚠️ 注意: 三宮站步行至此有斜坡</p></div>
-                    <div><h3 class="text-xl font-black text-blue-600 underline">📍 神戶港區 / Mosaic</h3><p>📝 內容: BE KOBE 地標拍照、欣賞神戶港塔夜景</p><p>⏰ 時間: 下午至傍晚</p><p class="text-red-500">⚠️ 注意: 這裡有海邊美食街可悠閒走走</p></div>
-                    <div><h3 class="text-xl font-black text-blue-600 underline">📍 南京町 (中華街)</h3><p>📝 內容: 逛特色燈籠街道，吃老祥記肉包</p><p>⏰ 時間: 晚上回大阪前</p><p class="text-red-500">⚠️ 注意: 週日美食排隊人潮較多</p></div>
+        <section>
+            <div class="day-header">
+                <h2 class="text-2xl font-black text-[#118AB2]">Day 4: 1/25 (日) 京都：清水寺慢活</h2>
+                <p class="text-sm font-bold text-gray-500">重點：不擠公車！計程車上山、散步下坡</p>
+            </div>
+            <div class="bg-white border-4 border-black p-6 rounded-2xl shadow-xl space-y-4">
+                <div class="time-node">
+                    <span class="info-tag">08:30</span> <span class="font-black">阪急大阪梅田站 ➔ 河原町</span>
+                    <p class="text-sm text-gray-600">搭乘「阪急京都線」特急，約 45 分鐘抵達終點站。</p>
+                </div>
+                <div class="time-node">
+                    <span class="info-tag">09:30</span> <span class="font-black">河原町 ➔ 清水寺門口 (計程車)</span>
+                    <p class="text-sm text-gray-600"><b>千萬別搭公車！</b> 直接在車站出口搭計程車，約 ¥1,200 可直達清水寺門口，省體力。</p>
+                </div>
+                <div class="time-node">
+                    <span class="info-tag">11:00 - 15:00</span> <span class="font-black">慢走散步路線</span>
+                    <p class="text-sm text-gray-600">清水寺 ➔ 產寧坂 ➔ 二年坂(星巴克榻榻米) ➔ 八坂神社 ➔ 祇園花見小路。</p>
+                </div>
+                <div class="warning-box font-bold">
+                    ⚠️ 回程若能搭到「雅洛號」觀光電車是驚喜。
                 </div>
             </div>
+        </section>
 
-            <div class="group relative pl-10 border-l-4 border-[#FFD166]">
-                <div class="absolute -left-[20px] top-0 w-9 h-9 bg-white border-4 border-[#FFD166] rounded-full flex items-center justify-center font-black text-sm z-10 group-hover:bg-[#FFD166] transition-colors">5</div>
-                <h2 class="text-2xl font-black text-[#e6b800] mb-2">1/26 (一) 琵琶湖滑雪 (新手)</h2>
-                <div class="bg-white border-4 border-black p-5 rounded-2xl shadow-[6px_6px_0px_0px_rgba(255,209,102,0.2)] space-y-6">
-                    <div><h3 class="text-xl font-black text-blue-600 underline">📍 琵琶湖山谷滑雪場</h3><p>📝 內容: 租借裝備、滑雪初體驗</p><p>⏰ 時間: 從梅田搭 JR 湖西線至志賀站，約 1.5 小時</p><p class="text-red-500">⚠️ 注意: 建議官網先預約雪具租借節省時間</p></div>
+        <section>
+            <div class="day-header">
+                <h2 class="text-2xl font-black text-[#F59E0B]">Day 5: 1/26 (一) 滋賀：箱館山滑雪</h2>
+                <p class="text-sm font-bold text-gray-500">重點：琵琶湖美景、雪地樂園</p>
+            </div>
+            <div class="bg-white border-4 border-black p-6 rounded-2xl shadow-xl space-y-4">
+                <div class="time-node">
+                    <span class="info-tag">07:15</span> <span class="font-black">抵達希爾頓廣場西集合點</span>
+                    <p class="text-sm text-gray-600">就在梅田站對面，找 KKday 旗幟的人員報到。</p>
+                </div>
+                <div class="time-node">
+                    <span class="info-tag">09:45</span> <span class="font-black">抵達箱館山雪場</span>
+                    <p class="text-sm text-gray-600">領取雪衣雪具。 <b>Kid's World</b> 區，那裡有傳送帶雪盆，不用自己爬坡。</p>
+                </div>
+                <div class="time-node">
+                    <span class="info-tag">16:30</span> <span class="font-black">集合返程</span>
+                    <p class="text-sm text-gray-600">預計 18:30 回到梅田。回飯店泡個桑拿緩解痠痛。</p>
+                </div>
+                <div class="warning-box font-bold">
+                    ⚠️ (汗水)，滑完要立刻換乾的長襪和內衣。保溫瓶。
                 </div>
             </div>
+        </section>
 
-            <div class="group relative pl-10 border-l-4 border-[#073B4C]">
-                <div class="absolute -left-[20px] top-0 w-9 h-9 bg-white border-4 border-[#073B4C] rounded-full flex items-center justify-center font-black text-sm z-10 group-hover:bg-[#FFD166] transition-colors">6</div>
-                <h2 class="text-2xl font-black text-[#073B4C] mb-2">1/27 (二) 大阪精華與溫泉</h2>
-                <div class="bg-white border-4 border-black p-5 rounded-2xl shadow-[6px_6px_0px_0px_rgba(7,59,76,0.2)] space-y-6">
-                    <div><h3 class="text-xl font-black text-blue-600 underline">📍 大阪城公園</h3><p>📝 內容: 登天守閣、看梅林(一月下旬早開)</p><p>⏰ 時間: 上午 09:30</p><p class="text-red-500">⚠️ 注意: 園區很大，建議搭接駁小火車省體力</p></div>
-                    <div><h3 class="text-xl font-black text-blue-600 underline">📍 心齋橋 / 道頓堀</h3><p>📝 內容: 最後採購藥妝、與跑跑人合影</p><p>⏰ 時間: 下午時段</p><p class="text-red-500">⚠️ 注意: 章魚燒螃蟹等熱門餐廳需排隊</p></div>
-                    <div><h3 class="text-xl font-black text-blue-600 underline">📍 空庭溫泉 (弁天町)</h3><p>📝 內容: 穿浴衣拍照、泡腳紓壓</p><p>⏰ 時間: 晚上 19:00 後</p><p class="text-red-500">⚠️ 注意: 滑雪後泡湯可有效減少肌肉痠痛</p></div>
+        <section>
+            <div class="day-header">
+                <h2 class="text-2xl font-black text-[#073B4C]">Day 6: 1/27 (二) 睡飽、室內放電、秤重</h2>
+                <p class="text-sm font-bold text-gray-500">重點：修復滑雪疲勞、室內大樂園</p>
+            </div>
+            <div class="bg-white border-4 border-black p-6 rounded-2xl shadow-xl space-y-4">
+                <div class="time-node">
+                    <span class="info-tag">11:00</span> <span class="font-black">睡飽午餐、梅田百貨最後補貨</span>
+                    <p class="text-sm text-gray-600">逛阪急百貨地下食品街，買藥妝伴手禮。</p>
+                </div>
+                <div class="time-node">
+                    <span class="info-tag">14:00 - 17:00</span> <span class="font-black">大阪兒童樂園 (Kids Plaza)</span>
+                    <p class="text-sm text-gray-600 font-bold">地鐵「扇町」站直達。全室內超大滑梯與冒險區，適合帶小孩耗體力。</p>
+                </div>
+                <div class="warning-box font-bold">
+                    ⚠️ 神戶？？？
                 </div>
             </div>
+        </section>
 
-            <div class="group relative pl-10 border-l-4 border-gray-400">
-                <div class="absolute -left-[20px] top-0 w-9 h-9 bg-white border-4 border-gray-400 rounded-full flex items-center justify-center font-black text-sm z-10 group-hover:bg-[#FFD166] transition-colors">7</div>
-                <h2 class="text-2xl font-black text-gray-600 mb-2">1/28 (三) 臨空城與回程</h2>
-                <div class="bg-white border-4 border-black p-5 rounded-2xl shadow-[6px_6px_0px_0px_rgba(0,0,0,0.1)] space-y-6">
-                    <div><h3 class="text-xl font-black text-blue-600 underline">📍 臨空城 Outlet</h3><p>📝 內容: Sea Side 美食街海景午餐、最後血拼</p><p>⏰ 時間: 11:30 抵達，16:30 離開</p><p class="text-red-500">⚠️ 注意: 建議搭乘 Sky Shuttle 巴士直達機場</p></div>
-                    <div><h3 class="text-xl font-black text-blue-600 underline">📍 關西機場 報到</h3><p>📝 內容: 辦理登機與免稅店補貨</p><p>⏰ 時間: 17:00 報到，19:00 起飛</p><p class="text-red-500">⚠️ 注意: 預留安檢排隊時間</p></div>
+        <section>
+            <div class="day-header">
+                <h2 class="text-2xl font-black text-gray-500">Day 7: 1/28 (三) 臨空城最後收割</h2>
+                <p class="text-sm font-bold text-gray-500">重點：不走回頭路、機場前哨站</p>
+            </div>
+            <div class="bg-white border-4 border-black p-6 rounded-2xl shadow-xl space-y-4">
+                <div class="time-node">
+                    <span class="info-tag">11:30</span> <span class="font-black">抵達臨空城 (Rinku Town)</span>
+                    <p class="text-sm text-gray-600">難波搭南海電鐵直達。行李寄放車站櫃位。最後採買 Skechers、童裝。</p>
+                </div>
+                <div class="time-node">
+                    <span class="info-tag">16:30</span> <span class="font-black">抵達 KIX 機場報到</span>
+                    <p class="text-sm text-gray-600">CI 173 (19:00) 起飛。入關後免稅店買餅乾伴手禮。</p>
                 </div>
             </div>
+        </section>
 
-        </div>
     </main>
-
-    <section class="max-w-3xl mx-auto px-6 mt-10">
-        <div class="bg-white border-4 border-black rounded-3xl overflow-hidden shadow-[10px_10px_0px_0px_rgba(239,71,111,1)]">
-            <div class="bg-[#EF476F] text-white p-3 font-bold flex items-center">
-                <i class="fa-solid fa-map-location-dot mr-2 text-yellow-300"></i> Snoopy 冒險地圖
-            </div>
-            <div class="w-full h-[450px]">
-                <iframe src="https://www.google.com/maps/d/embed?mid=1hLeyK-BVc_lxw-NFGIQDE1xT3qq5kCU&ehbc=2E312F" width="100%" height="480" style="border:0;"></iframe>
-            </div>
-            <div class="p-3 bg-gray-50 border-t-4 border-black text-center">
-                <a href="https://www.google.com/maps/d/edit?mid=1vX696GqM58zYf_6S0fXv_uI9tI-wU_A&usp=sharing" target="_blank" class="text-blue-600 font-bold underline text-sm">
-                    <i class="fa-solid fa-up-right-from-square mr-1"></i> 點我開啟大圖導航
-                </a>
-            </div>
+        <br/>
+        <div class="w-full h-[450px]">
+            <iframe src="https://www.google.com/maps/d/embed?mid=1hLeyK-BVc_lxw-NFGIQDE1xT3qq5kCU&ehbc=2E312F" width="100%" height="480" style="border:0;"></iframe>
         </div>
-    </section>
 
-    <footer class="text-center py-16 bg-[#2B2D42] text-white mt-20">
-        <p class="text-3xl snoopy-float">🐶 ❤️ 🐥</p>
-        <p class="mt-4 font-bold tracking-widest uppercase">Have a Good Grief Trip!</p>
+    <footer class="text-center py-20 text-gray-500 font-bold">
+        🐶 平安愉快！ 🐥
     </footer>
 
 </body>
